@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1 align="center">Curriculum vitae</h1>
+    <form action="salida.html">
+        <section>
+            <fieldset style="background-color:whitesmoke">
+                <legend style="font-size: 2em;border: 4px">Datos Personales</legend>
+                <br>
+                <label for="name">DUI </label>
+                <input type="text" name="nombre" id="name" placeholder="123456789" required pattern="{0,9}">
+                <label for="name">Nombre </label>
+                <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+                <label for="lastname">Apellido </label>
+                <input type="text" name="apellido" id="lastname" placeholder="Apellido" required>
+                <label for="genero">Género: </label>
+                <label>M
+                    <input type="radio" name="genero" id="genero" required value="M">
+                </label>
+                <label>F
+                    <input type="radio" name="genero" id="genero" required value="F">
+                </label>
+                <br>
+                <br>
+                <label for="phone">Teléfono </label>
+                <input type="tel" name="telefono" id="phone" required placeholder="Teléfono fijo o celular">
+                <label for="fecha">Fecha de nacimiento: </label>
+                <input type="date" name="fecha" id="fecha" required>
+                <label for="estado">Estado civil </label>
+                <select>
+                    <option>Soltero</option>
+                    <option>Casado</option>
+                    <option>Viudo</option>
+                    <option>Divorciado</option>
+                    <option>Prefiero no decirlo</option>
+                </select>
+                <label for="foto">Fotografía </label>
+                <input type="file">
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset style="background-color:whitesmoke">
+                <legend style="font-size: 2em;border: 4px">Experiencia Laboral</legend>
+                <textarea rows="10" cols="220" placeholder="Experiencia"></textarea>
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset style="background-color:whitesmoke">
+                <legend style="font-size: 2em;border: 4px">Entrenamiento académico</legend>
+                <textarea rows="10" cols="220" placeholder="Entrenamiento académico"></textarea>
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset style="background-color:whitesmoke">
+                <legend style="font-size: 2em;border: 4px">Entrenamiento Futuro</legend>
+                <fieldset>
+                    <legend>Lenguajes de programación</legend>
+                    <input type="checkbox">
+                    <label>Java</label>
+                    <input type="checkbox">
+                    <label>C#</label>
+                    <input type="checkbox">
+                    <label>Python</label>
+                    <input type="checkbox">
+                    <label>C++</label>
+                    <input type="checkbox">
+                    <label>Ruby</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Tecnologías web</legend>
+                    <input type="checkbox">
+                    <label>HTML5</label>
+                    <input type="checkbox">
+                    <label>CSS/CSS3</label>
+                    <input type="checkbox">
+                    <label>materialize Css</label>
+                    <input type="checkbox">
+                    <label>JavaScript</label>
+                    <input type="checkbox">
+                    <label>Node.js</label>
+                    <input type="checkbox">
+                    <label>Spring MVC</label>
+                </fieldset>
+        </section>
+        <section>
+            <br>
+            <button type="submit" style="border-color:black; font-size: 1em;background:darkorange">
+                <b>Enviar</b>
+            </button>
+        </section>
+    </form>
+</body>
+
+</html>
